@@ -1,0 +1,40 @@
+@import '../../../styles/scss/variables.scss';
+
+.small-hash-card {
+  border: 1px solid;
+  width: 100%;
+  height: 90px;
+  border-radius: 4px;
+  padding: 20px;
+  border: 1px solid $dark-gray-2;
+  background-color: $dark-gray-2;
+  position: relative;
+  .innner-hash-card {
+    display: flex;
+    div {
+      margin: 0 5px;
+    }
+  }
+  .info-icon {
+    margin-right: 2px;
+    margin-top: 6px;
+  }
+  svg.first {
+    margin-left: -6.5px;
+  }
+  .info-text {
+    margin-right: 4px;
+  }
+  div.data {
+    // margin-left: 48px;
+    // margin-top: -35px;
+    .status {
+    }
+  }
+  svg.right-icon {
+    position: absolute;
+    right: 0;
+    margin-right: 15px;
+    margin-top: 12px;
+  }
+}

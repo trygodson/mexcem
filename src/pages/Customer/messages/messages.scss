@@ -1,0 +1,67 @@
+@import '../../../shared/styles/scss/variables.scss';
+
+main {
+  .row {
+    .message-filter-wrapper {
+      .message-filter-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 18px;
+        margin: 15px 0;
+        transition: background-color 0.3s ease;
+        .circle {
+          width: 20px;
+          height: 20px;
+          background-color: black;
+          border-radius: 50%;
+        }
+        .success {
+          background-color: $success;
+        }
+        .primary {
+          background-color: $primary;
+        }
+
+        &:hover {
+          background-color: $dark-gray;
+        }
+      }
+    }
+    .message-card-wrapper {
+      .message-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 0;
+        .checker {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-right: 15px;
+          .circle {
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background-color: $success;
+            margin-right: 7px;
+          }
+        }
+        .msg {
+          margin-right: 10px;
+          h5 {
+            font-weight: 500;
+          }
+          p {
+            font-weight: 300;
+            font-size: 13px;
+          }
+        }
+        .date {
+          font-size: 12px;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}

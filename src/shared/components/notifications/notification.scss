@@ -1,0 +1,13 @@
+@import '../../styles/scss/variables.scss';
+
+.bell-wrapper {
+  border: 1px solid $border-2;
+  margin-top: 2.5px;
+  width: 39.5px;
+  height: 38.5px;
+  border-radius: 3px;
+  svg {
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+}

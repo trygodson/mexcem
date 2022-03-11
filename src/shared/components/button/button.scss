@@ -1,0 +1,93 @@
+// all button classes must be written here
+
+@import '../../styles/scss/variables.scss';
+
+.btn-primary {
+  color: $white;
+  background: $primary;
+}
+
+.btn-success {
+  color: $white;
+  background: $success;
+}
+
+.btn-danger {
+  color: $white;
+  background: $danger;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+// Center Container Btn
+.center-container-btn {
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  color: $white;
+}
+
+// Modal Btn Class
+.modal-btn {
+  width: 105px;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+}
+
+.cancel-btn {
+  background: none !important;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.action-btn {
+  font-size: 12px;
+}
+
+.danger-outline-btn {
+  background: $white;
+  border: 2px solid $danger;
+  color: $danger;
+  font-weight: bold;
+}
+.success-outline-btn {
+  background: $white;
+  border: 2px solid $success;
+  color: $success;
+  font-weight: bold;
+}
+
+.rightSpace {
+  margin: 0 10px;
+}
+
+// Dashboard buttons
+.dashboard-title-btn {
+  min-width: 95px;
+  height: 28.5px;
+  font-size: 12.45px;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+}
+
+.primary-dashboard-title-btn {
+  color: $dark-primary !important;
+  background: $faint-primary-2 !important;
+}
+
+.success-dashboard-title-btn {
+  color: $success !important;
+  background: $faint-success-3 !important;
+}
+
+.danger-dashboard-title-btn {
+  color: $danger !important;
+  background: $faint-danger !important;
+}

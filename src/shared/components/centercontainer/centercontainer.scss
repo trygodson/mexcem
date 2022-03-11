@@ -1,0 +1,22 @@
+@import '../../../shared/styles/scss/variables.scss';
+
+.center-of-page {
+  margin-top: 15%;
+  @media screen and (min-width: $lg) {
+    margin-top: 7%;
+    margin-left: 31%;
+    margin-right: 31%;
+  }
+}
+
+.center-container {
+  background: $white-background;
+  // height: 380px;
+  border-radius: 5px;
+  padding: 90px 95px 90px 95px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}

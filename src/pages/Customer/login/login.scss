@@ -1,0 +1,75 @@
+@import '../../../shared/styles/scss/variables.scss';
+
+.login-left {
+  background: $dark-background;
+  height: 100vh;
+  padding: 20px;
+  .logo-div {
+    img {
+      margin-left: 36%;
+      margin-bottom: -50px;
+      margin-top: 80px;
+    }
+  }
+  .image-cluster {
+    // margin-top: 60px;
+    margin-left: 78px;
+    .image-1 {
+      width: 265px;
+      height: 265px;
+      object-fit: cover;
+    }
+    .image-2 {
+      width: 262px;
+      height: 262px;
+      object-fit: cover;
+      border: 8px solid $white;
+      margin-top: 25%;
+
+      // adjust
+      margin-left: -65px;
+      margin-bottom: -60px;
+    }
+    h2 {
+      color: $white;
+      font-size: 32px;
+    }
+    p {
+      color: $white;
+      font-size: 13px;
+    }
+  }
+}
+
+.login-right {
+  height: 100vh;
+  padding: 20px;
+  background: $gray-background;
+  .bg-form {
+    // border: 1px solid;
+    .inner {
+      padding: 50px 65px;
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+  .customer-input {
+    border: 1px solid #06152b3f;
+    border-radius: 4px;
+    height: 36px;
+    width: 100%;
+    background: $gray-background;
+    outline: none;
+    padding-left: 5px;
+  }
+  button {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background: $primary;
+    color: $white;
+  }
+}

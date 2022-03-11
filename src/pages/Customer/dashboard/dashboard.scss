@@ -1,0 +1,33 @@
+@import '../../../shared/styles/scss/variables.scss';
+
+.balance {
+  color: $gray;
+}
+
+main {
+  .row {
+    .promotion {
+      .tabs {
+        background-color: $gray-background;
+        padding: 2px 4px;
+        display: flex;
+        justify-content: space-around;
+        span {
+          width: 48.7%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 30px;
+          border-radius: 6px;
+          font-size: 14px;
+          color: black;
+          cursor: pointer;
+          &.active {
+            background-color: $faint-primary-4;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}

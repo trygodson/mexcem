@@ -1,0 +1,14 @@
+.card-padded-title.multiple {
+  display: flex;
+  flex-direction: row;
+  h3 {
+    margin-right: 65px;
+  }
+  overflow-x: auto;
+}
+
+.starRow {
+  svg {
+    margin-right: 4.5%;
+  }
+}

@@ -1,0 +1,49 @@
+main{
+  h2.left{
+    font-size: 22px;
+  }
+  section.wrapper{
+    width: 100%;
+    background-color: white;
+    span{
+      font-size: 13px;
+      font-weight: 300;
+    }
+    .card-padded-title{
+      // border-bottom: 1px solid grey;
+
+    }
+    .content{
+      .item{
+        margin: 10px 0;
+        .card-wrapper{
+          background-color: aqua;
+          padding: 20px;
+          color: white;
+          .top{
+            display: flex;
+            align-items: center;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(134, 134, 134, 0.534);
+          }
+          .bottomm{
+            width: 100%;
+            background-color: none;
+            .in{
+              width: 100%;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              .applied{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              }
+            }
+          }
+        }
+    }
+
+    }
+  }
+}

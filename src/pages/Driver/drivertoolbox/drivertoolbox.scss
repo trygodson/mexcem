@@ -1,0 +1,35 @@
+@import '../../../shared/styles/scss/variables.scss';
+
+main {
+  section {
+    .row {
+      .tool-container {
+        background-color: $gray-background;
+        box-shadow: 0 0 7px #ccc;
+        padding: 20px;
+        .toolbox-image-wrapper {
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          background-color: grey;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .tool-name {
+          font-size: 18px;
+          font-weight: 500;
+          margin: 10px 0px;
+        }
+        .name {
+          margin: 0 5px;
+          height: 25px;
+          width: 60px;
+          font-size: 14px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

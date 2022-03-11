@@ -1,0 +1,108 @@
+@import '../../styles/scss/variables.scss';
+
+.sidebar {
+  height: 100%;
+  background: $dark-background;
+  // overflow-y: auto;
+  // overflow-x: hidden;
+  .inner-bar {
+    padding: 15px 10px 15px 25px;
+    .header {
+      height: 65px;
+      .adjust-menu-bar {
+        position: relative !important;
+        margin-top: 11px;
+        margin-left: -5px;
+      }
+      .sidebar-logo {
+        margin-top: 10px;
+      }
+      svg {
+        float: right;
+        margin-top: -41.5px;
+      }
+    }
+    .main,
+    .settings {
+      // border: 1px solid white;
+      color: white;
+      .fill {
+        height: 0;
+        overflow: hidden;
+        z-index: 500000;
+        .sub-menu-wrapper {
+          display: block;
+          width: 100%;
+          padding: 5px 0 10px 30px;
+
+          .sublink {
+            display: block;
+            width: 80%;
+
+            padding: 5px 8px;
+            font-size: 15px;
+            text-align: left;
+            margin: 7px auto;
+          }
+        }
+      }
+      .show-sub-menu {
+        animation: movement 0.8s linear 1;
+        height: 100%;
+        // transition: height 0.5s ease-in-out;
+      }
+      .dgh {
+        transition: transform 0.3s ease-in-out;
+      }
+      .rotate-icon {
+        transform: rotate(180deg);
+        transition: transform 0.3s ease-in-out;
+      }
+      .option {
+        display: flex;
+        position: relative;
+        cursor: pointer;
+        // justify-content: space-between;
+        i {
+          font-size: 22px;
+        }
+        span {
+          padding: 0 25px;
+          margin-top: 2px;
+        }
+        span.messagesNum {
+          padding: none;
+          // float: right;
+          margin-left: 60px;
+          @media screen and (max-width: 1312px) {
+            margin-left: 15%;
+          }
+          @media screen and (max-width: 1160px) {
+            margin-left: 10%;
+          }
+          @media screen and (max-width: 1090px) {
+            margin-left: 7%;
+          }
+        }
+        margin: 10px 0;
+      }
+    }
+  }
+}
+@keyframes movement {
+  0% {
+    // transform: translateY(100px);
+    height: 0%;
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.2;
+    height: 20%;
+  }
+
+  100% {
+    opacity: 1;
+    // transform: translateY(0px);
+    height: 100%;
+  }
+}

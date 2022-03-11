@@ -1,0 +1,9 @@
+@import '../../styles/scss/variables.scss';
+
+.dropdown-card {
+  position: absolute;
+  background: $white-background;
+  box-shadow: 5px 6px 20px $border-3;
+  border-radius: 4px;
+  z-index: 1000;
+}

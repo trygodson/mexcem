@@ -1,0 +1,64 @@
+@import '../../styles/scss/variables.scss';
+
+.modal-close-icon {
+  float: right;
+}
+
+.modal-icon {
+  text-align: center;
+  border: 1px solid;
+  margin-left: 45.5%;
+  margin-right: 45.5%;
+  height: 36px;
+  width: 36px;
+  padding: 1.5px;
+  border-radius: 50%;
+  border: none;
+  svg {
+    margin-bottom: -9.75px !important;
+  }
+}
+
+.modal-body {
+  padding: 25px;
+  background: $white-background;
+  border-radius: 6.5px;
+  overflow: hidden;
+  .modal-body-title {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+
+  .modal-header {
+    height: auto;
+    padding: 18px 35px;
+    background: $gray-background;
+  }
+  .modal-sub-body {
+    padding: 18px 40px;
+  }
+}
+.customModalBodyClass {
+  padding: 0;
+}
+
+.popupModalInputBorder {
+  border-radius: 5px !important;
+}
+
+.popupIconDiv {
+  background: $primary;
+}
+
+.popupInputIcon {
+  color: $white !important;
+}
+
+.popupInput {
+  border-radius: 0px !important;
+  height: 36px !important;
+}
+
+.ReactModal__Overlay {
+  background: rgba(0, 0, 0, 0.3) !important;
+}

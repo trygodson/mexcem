@@ -1,0 +1,55 @@
+@import '../../../shared/styles/scss/variables.scss';
+
+main {
+  .top {
+    display: flex;
+    justify-content: space-between;
+    .icon-number-holder {
+      display: flex;
+      .icon-holder {
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        i {
+          font-size: 22px;
+        }
+      }
+      .count-holder {
+        margin: 0 8px;
+        .total {
+          font-size: 12px;
+        }
+        .count {
+          font-weight: bold;
+          font-size: 24px;
+        }
+      }
+    }
+    .add-vehicle-button {
+      display: flex;
+      align-items: center;
+      padding: 7px;
+      cursor: pointer;
+      span {
+        font-size: 14px;
+      }
+      svg {
+        margin-right: 8px;
+      }
+    }
+  }
+  p {
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .bottom {
+    padding: 8px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $gray-background;
+  }
+}

@@ -1,0 +1,43 @@
+@import '../../../shared/styles/scss/variables.scss';
+
+table {
+  padding: 0 !important;
+  margin-top: -16px;
+  text-align: left;
+  thead {
+    margin-bottom: 20px;
+  }
+  border-spacing: 0 !important;
+}
+
+.status {
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.table {
+  .card-body {
+    border-radius: 3.6px;
+  }
+}
+.table-responsive {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.actions {
+  @media screen and (max-width: $lg) {
+    display: flex;
+  }
+  .table-icon-wrapper {
+    padding: 4px;
+    border-radius: 7px;
+    cursor: pointer;
+  }
+  .before {
+    margin-right: 18px;
+    @media screen and (max-width: $lg) {
+      margin-right: 2px !important;
+    }
+  }
+}

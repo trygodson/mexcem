@@ -1,0 +1,48 @@
+@import '../../styles/scss/variables.scss';
+
+.card {
+  background: $white-background;
+  border-radius: 4px;
+  padding: 25px;
+  margin-bottom: 15px;
+}
+
+// basic card style
+.basic-card,
+.advanced-card {
+  .card-title {
+    font-weight: bold;
+  }
+  .card-body {
+    margin-top: 15px;
+    .icon-wrapper {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      position: relative;
+      i,
+      svg {
+        position: absolute;
+        font-size: 21.5px !important;
+        margin-left: 10.3px;
+        margin-top: 8px;
+      }
+    }
+    .total-wrapper {
+      margin-left: 12.5px;
+    }
+  }
+
+  .card-footer {
+    font-size: 13px;
+  }
+}
+
+.assist-request-card {
+  // padding: 17.5px !important;
+  padding: 17.5 0 15 0;
+}
+
+.card-content {
+  padding: 20px !important;
+}

@@ -1,0 +1,10 @@
+@import '../../../../shared/styles/scss/variables.scss';
+
+main {
+  section {
+    .card-field-wrapper {
+      background-color: $faint-gray;
+      padding: 30px;
+    }
+  }
+}

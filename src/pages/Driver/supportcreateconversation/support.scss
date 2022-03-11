@@ -1,0 +1,57 @@
+@import '../../../shared/styles/scss/variables.scss';
+
+main {
+  .recent-assist {
+    h4 {
+      font-weight: 500;
+      padding-bottom: 15px;
+    }
+    .recent-assist-detail-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 10px 0 10px 5px;
+      .detail {
+        h5 {
+          font-weight: 500;
+        }
+        span {
+          font-weight: 300;
+          font-size: 14px;
+        }
+      }
+      span.sucessful {
+        color: $success;
+        font-size: 13px;
+      }
+    }
+    h4.other {
+      margin: 20px 0;
+      margin-top: 30px;
+    }
+    .other-topic-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 25px 0;
+      span.topic-title {
+        font-size: 16px;
+      }
+    }
+  }
+  .support-rhs {
+    height: auto;
+    .top-holder {
+      padding: 10px 0 10px 0;
+    }
+    .sub-topic-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 25px 0;
+      span.topic-title {
+        font-size: 16px;
+      }
+    }
+  }
+}

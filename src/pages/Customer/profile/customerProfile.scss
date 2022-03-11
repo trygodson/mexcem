@@ -1,0 +1,107 @@
+@import '../../../shared/styles/scss/variables.scss';
+
+main {
+  .row {
+    .profile {
+      background-color: $white;
+      width: 400px;
+      height: 350px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .image-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .rounded-border {
+          border: 2px solid grey;
+        }
+        h5 {
+          font-weight: 500;
+          margin: 5px 0;
+        }
+      }
+      .boxes-wrapper {
+        justify-content: space-around;
+        margin-top: 20px;
+        .boxes {
+          width: 100px;
+          height: 70px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+    .profile-detail-wrapper {
+      width: 100%;
+      height: auto;
+      padding-bottom: 40px;
+      background-color: $white;
+      .top-holder {
+        padding: 26px 30px;
+        border-bottom: 1px solid #ccc;
+      }
+      .fields-wrapper {
+        .pref {
+          flex-direction: column;
+          padding-left: 15px;
+          margin: 10px 0;
+          color: #06152bbf;
+          h4 {
+            font-weight: 500;
+            margin-bottom: 5px;
+          }
+          h5 {
+            font-weight: 400;
+            margin: 5px 0;
+          }
+          p {
+            font-weight: 400;
+            margin: 5px 0;
+          }
+        }
+        .inp {
+          display: flex;
+          .input-wrapper {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            justify-content: flex-start;
+            .communication {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              color: #06152bbf;
+              h5 {
+                font-weight: 500;
+                margin-bottom: 7px;
+              }
+            }
+            label {
+              margin: 12px 0;
+            }
+            .customer-input {
+              border: 1px solid #ccc;
+            }
+          }
+        }
+      }
+    }
+    .profile-submit-button {
+      padding: 12px 0;
+      outline: none;
+      text-align: center;
+      border-radius: 7px;
+      background: $success;
+      color: white;
+      cursor: pointer;
+      border: none;
+      width: 100%;
+      margin-top: 30px;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.otp-wrapper {
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+  //   div:first-child {
+  //     justify-content: center;
+  //   }
+  .otp-input-style {
+    width: 2rem !important;
+    height: 2rem;
+    margin: 0 0.4rem;
+    // font-size: 1.4rem;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+  }
+}

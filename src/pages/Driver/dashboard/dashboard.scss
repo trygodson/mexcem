@@ -1,0 +1,13 @@
+@import '../../../shared/styles/scss/variables.scss';
+
+main {
+  .promotion {
+    .view-more {
+      font-size: 12px;
+      background-color: $gray-background;
+      padding: 8px 13px;
+      margin-right: 10px;
+      font-weight: 500;
+    }
+  }
+}
