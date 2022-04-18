@@ -5,8 +5,10 @@ import Image2 from '../../../../assets/img/driver background.jpg';
 import Logo from '../../../../shared/components/logo/logo';
 import Height from '../../../../shared/components/height/height';
 import { ArrowLeft } from 'react-bootstrap-icons';
+import { useHistory } from 'react-router-dom';
 
 function Otp() {
+  const { push } = useHistory();
   return (
     <div className="row">
       <div className="col-6 login-left">
@@ -31,7 +33,7 @@ function Otp() {
             <Height val={5} />
             <input className="customer-input" placeholder="Enter code" />
             <Height val={7} />
-            <button>Resend code</button>
+            <button onClick={() => push('/vehicle_detail')}>Proceed</button>
             <Height val={5} />
             <p className="textCenter">Problems receiving the code?</p>
           </div>

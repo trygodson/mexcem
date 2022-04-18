@@ -6,6 +6,7 @@ import Height from '../../../../shared/components/height/height';
 import { ArrowLeft } from 'react-bootstrap-icons';
 import CustomReactSelect from '../../../../shared/components/customreactselect/customreactselect';
 import './vehicledetail.scss';
+import { useHistory } from 'react-router-dom';
 const userOptions = [
   { value: '1', label: 'Michael' },
   { value: '2', label: 'John' },
@@ -13,6 +14,8 @@ const userOptions = [
 ];
 
 function DriverVehicleDetail() {
+  const { push } = useHistory();
+
   return (
     <div className="row">
       <div className="col-6 login-left">
@@ -102,7 +105,7 @@ function DriverVehicleDetail() {
               </p>
             </div>
             <Height val={12} />
-            <button>Next</button>
+            <button onClick={() => push('/driver_verification')}>Next</button>
           </div>
         </div>
       </div>

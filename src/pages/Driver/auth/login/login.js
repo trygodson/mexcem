@@ -5,8 +5,10 @@ import Image2 from '../../../../assets/img/driver background.jpg';
 import Logo from '../../../../shared/components/logo/logo';
 import Height from '../../../../shared/components/height/height';
 import Input from '../../../../shared/components/input/input';
+import { useHistory } from 'react-router-dom';
 
 function Login() {
+  const { push } = useHistory();
   return (
     <div className="row">
       <div className="col-6 login-left">
@@ -36,7 +38,7 @@ function Login() {
             <input type="checkbox" />
             &nbsp;Keep me signed in
             <Height val={12} />
-            <button>Proceed</button>
+            <button onClick={() => push('/otp')}>Proceed</button>
             <Height val={10} />
             <p className="textCenter">Changed your number? Find your account</p>
           </div>

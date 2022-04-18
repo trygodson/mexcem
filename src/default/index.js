@@ -1,6 +1,6 @@
 import { userTypes } from '../shared/utils/userTypes';
 
-const sudoUserType = userTypes.Admin;
+const sudoUserType = userTypes.Driver;
 
 const colorScheme = {
   primary: '#2db2ff',

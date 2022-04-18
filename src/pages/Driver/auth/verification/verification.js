@@ -4,6 +4,7 @@ import Image2 from '../../../../assets/img/driver background.jpg';
 import Logo from '../../../../shared/components/logo/logo';
 import Height from '../../../../shared/components/height/height';
 import { ArrowLeft } from 'react-bootstrap-icons';
+import { useHistory } from 'react-router-dom';
 
 const userOptions = [
   { value: '1', label: 'Michael' },
@@ -12,6 +13,8 @@ const userOptions = [
 ];
 
 function DriverVerification() {
+  const { push } = useHistory();
+
   return (
     <div className="row">
       <div className="col-6 login-left" style={{ height: 'auto' }}>
@@ -58,7 +61,7 @@ function DriverVerification() {
             />
 
             <Height val={60} />
-            <button>Continue</button>
+            <button onClick={() => push('/')}>Continue</button>
           </div>
         </div>
       </div>
